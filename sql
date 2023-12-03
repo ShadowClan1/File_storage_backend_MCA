@@ -1,0 +1,1 @@
+CREATE TABLE `file_manager`.`dirs` (`id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(255) NOT NULL , `size` INT NOT NULL , `parent_dir` INT NOT NULL , `owner_id` INT NOT NULL , `createdAt` DATETIME NOT NULL , `updatedAt` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

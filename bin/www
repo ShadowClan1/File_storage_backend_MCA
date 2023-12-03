@@ -1,0 +1,13 @@
+const http = require('http')
+const app = require('..')
+const constants = require('../constants/constants')
+const server = http.createServer(app)
+
+const port = constants.PORT;
+
+
+server.on('listening', ()=>{
+    console.log("server is listing")
+})
+
+server.listen(port)
